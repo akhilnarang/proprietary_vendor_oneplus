@@ -834,14 +834,10 @@ PRODUCT_PACKAGES += \
     embms \
     fastdormancy \
     shutdownlistener \
-    CNEService \
     QtiTetherService \
     com.qualcomm.location \
-    dpmserviceapp \
     qcrilmsgtunnel \
     colorservice \
-    ims \
-    imssettings \
     qcnvitems \
     qcrilhook
 endif
