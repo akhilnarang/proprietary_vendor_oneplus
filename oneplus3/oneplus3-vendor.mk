@@ -832,12 +832,13 @@ PRODUCT_PACKAGES += \
     TimeService \
     datastatusnotification \
     embms \
-    fastdormancy \
     shutdownlistener \
     QtiTetherService \
     com.qualcomm.location \
     qcrilmsgtunnel \
     colorservice \
+    ims \
+    imssettings \
     qcnvitems \
     qcrilhook
 endif
