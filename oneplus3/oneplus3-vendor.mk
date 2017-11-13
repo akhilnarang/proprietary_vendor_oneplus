@@ -77,6 +77,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/lib/lib_oneplus_facebeauty.so:system/lib/lib_oneplus_facebeauty.so \
     vendor/oneplus/oneplus3/proprietary/lib/lib_oneplus_md.so:system/lib/lib_oneplus_md.so \
     vendor/oneplus/oneplus3/proprietary/lib/lib_oneplus_watermark.so:system/lib/lib_oneplus_watermark.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libcdsprpc.so:system/lib/libcdsprpc.so \
     vendor/oneplus/oneplus3/proprietary/lib/libmms_gyro_vstab.so:system/lib/libmms_gyro_vstab.so \
     vendor/oneplus/oneplus3/proprietary/lib/libmms_gyro_vstab_auth.so:system/lib/libmms_gyro_vstab_auth.so \
     vendor/oneplus/oneplus3/proprietary/lib/libmms_hal_vstab.so:system/lib/libmms_hal_vstab.so \
@@ -168,6 +169,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/hw/camera.msm8996.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.msm8996.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libSonyIMX298PdafLibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSonyIMX298PdafLibrary.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libactuator_rohm_bu63165gwl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_rohm_bu63165gwl.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libcdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcdsprpc.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromaflash.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromaflash.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx179_3a_1640x924_30fps_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx179_3a_1640x924_30fps_preview.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx179_3a_1640x924_30fps_preview_x3.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx179_3a_1640x924_30fps_preview_x3.so \
@@ -443,17 +445,12 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/etc/cne/wqeclient/profile5.xml:system/etc/cne/wqeclient/profile5.xml \
     vendor/oneplus/oneplus3/proprietary/etc/cne/wqeclient/profile6.xml:system/etc/cne/wqeclient/profile6.xml \
     vendor/oneplus/oneplus3/proprietary/etc/cne/wqeclient/profile7.xml:system/etc/cne/wqeclient/profile7.xml \
-    vendor/oneplus/oneplus3/proprietary/etc/dpm/dpm.conf:system/etc/dpm/dpm.conf \
-    vendor/oneplus/oneplus3/proprietary/etc/dpm/nsrm/NsrmConfiguration.xml:system/etc/dpm/nsrm/NsrmConfiguration.xml \
-    vendor/oneplus/oneplus3/proprietary/etc/init/dpmd.rc:system/etc/init/dpmd.rc \
     vendor/oneplus/oneplus3/proprietary/etc/permissions/audiosphere.xml:system/etc/permissions/audiosphere.xml \
     vendor/oneplus/oneplus3/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
-    vendor/oneplus/oneplus3/proprietary/etc/permissions/com.qti.dpmframework.xml:system/etc/permissions/com.qti.dpmframework.xml \
     vendor/oneplus/oneplus3/proprietary/etc/permissions/com.qti.location.sdk.xml:system/etc/permissions/com.qti.location.sdk.xml \
     vendor/oneplus/oneplus3/proprietary/etc/permissions/com.qti.snapdragon.sdk.display.xml:system/etc/permissions/com.qti.snapdragon.sdk.display.xml \
     vendor/oneplus/oneplus3/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
     vendor/oneplus/oneplus3/proprietary/etc/permissions/com.quicinc.cne.xml:system/etc/permissions/com.quicinc.cne.xml \
-    vendor/oneplus/oneplus3/proprietary/etc/permissions/dpmapi.xml:system/etc/permissions/dpmapi.xml \
     vendor/oneplus/oneplus3/proprietary/etc/permissions/embms.xml:system/etc/permissions/embms.xml \
     vendor/oneplus/oneplus3/proprietary/etc/permissions/izat.xt.srv.xml:system/etc/permissions/izat.xt.srv.xml \
     vendor/oneplus/oneplus3/proprietary/etc/permissions/lpa.xml:system/etc/permissions/lpa.xml \
@@ -466,25 +463,18 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/framework/QtiTelephonyServicelibrary.jar:system/framework/QtiTelephonyServicelibrary.jar \
     vendor/oneplus/oneplus3/proprietary/framework/audiosphere.jar:system/framework/audiosphere.jar \
     vendor/oneplus/oneplus3/proprietary/framework/cneapiclient.jar:system/framework/cneapiclient.jar \
-    vendor/oneplus/oneplus3/proprietary/framework/com.qti.dpmframework.jar:system/framework/com.qti.dpmframework.jar \
     vendor/oneplus/oneplus3/proprietary/framework/com.qti.location.sdk.jar:system/framework/com.qti.location.sdk.jar \
     vendor/oneplus/oneplus3/proprietary/framework/com.qti.snapdragon.sdk.display.jar:system/framework/com.qti.snapdragon.sdk.display.jar \
     vendor/oneplus/oneplus3/proprietary/framework/com.quicinc.cne.api-V1.0-java.jar:system/framework/com.quicinc.cne.api-V1.0-java.jar \
     vendor/oneplus/oneplus3/proprietary/framework/com.quicinc.cne.jar:system/framework/com.quicinc.cne.jar \
-    vendor/oneplus/oneplus3/proprietary/framework/dpmapi.jar:system/framework/dpmapi.jar \
     vendor/oneplus/oneplus3/proprietary/framework/embmslibrary.jar:system/framework/embmslibrary.jar \
     vendor/oneplus/oneplus3/proprietary/framework/izat.xt.srv.jar:system/framework/izat.xt.srv.jar \
     vendor/oneplus/oneplus3/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
-    vendor/oneplus/oneplus3/proprietary/framework/tcmclient.jar:system/framework/tcmclient.jar \
     vendor/oneplus/oneplus3/proprietary/framework/uimlpalibrary.jar:system/framework/uimlpalibrary.jar \
     vendor/oneplus/oneplus3/proprietary/lib/com.qualcomm.qti.ant@1.0.so:system/lib/com.qualcomm.qti.ant@1.0.so \
-    vendor/oneplus/oneplus3/proprietary/lib/com.qualcomm.qti.dpm.api@1.0.so:system/lib/com.qualcomm.qti.dpm.api@1.0.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libadsprpc.so:system/lib/libadsprpc.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libandroid_net.so:system/lib/libandroid_net.so \
     vendor/oneplus/oneplus3/proprietary/lib/libdiag_system.so:system/lib/libdiag_system.so \
-    vendor/oneplus/oneplus3/proprietary/lib/libdpmctmgr.so:system/lib/libdpmctmgr.so \
-    vendor/oneplus/oneplus3/proprietary/lib/libdpmfdmgr.so:system/lib/libdpmfdmgr.so \
-    vendor/oneplus/oneplus3/proprietary/lib/libdpmframework.so:system/lib/libdpmframework.so \
-    vendor/oneplus/oneplus3/proprietary/lib/libdpmnsrm.so:system/lib/libdpmnsrm.so \
-    vendor/oneplus/oneplus3/proprietary/lib/libdpmtcm.so:system/lib/libdpmtcm.so \
     vendor/oneplus/oneplus3/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
     vendor/oneplus/oneplus3/proprietary/lib/libqmi_cci_system.so:system/lib/libqmi_cci_system.so \
     vendor/oneplus/oneplus3/proprietary/lib/libsdm-disp-apis.so:system/lib/libsdm-disp-apis.so \
@@ -494,21 +484,18 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/lib/vendor.display.color@1.0.so:system/lib/vendor.display.color@1.0.so \
     vendor/oneplus/oneplus3/proprietary/lib/vendor.display.postproc@1.0.so:system/lib/vendor.display.postproc@1.0.so \
     vendor/oneplus/oneplus3/proprietary/lib64/com.qualcomm.qti.ant@1.0.so:system/lib64/com.qualcomm.qti.ant@1.0.so \
-    vendor/oneplus/oneplus3/proprietary/lib64/com.qualcomm.qti.dpm.api@1.0.so:system/lib64/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/oneplus/oneplus3/proprietary/lib64/com.qualcomm.qti.imscmservice@1.0.so:system/lib64/com.qualcomm.qti.imscmservice@1.0.so \
     vendor/oneplus/oneplus3/proprietary/lib64/lib-imscamera.so:system/lib64/lib-imscamera.so \
     vendor/oneplus/oneplus3/proprietary/lib64/lib-imsvideocodec.so:system/lib64/lib-imsvideocodec.so \
     vendor/oneplus/oneplus3/proprietary/lib64/lib-imsvt.so:system/lib64/lib-imsvt.so \
     vendor/oneplus/oneplus3/proprietary/lib64/lib-imsvtextutils.so:system/lib64/lib-imsvtextutils.so \
     vendor/oneplus/oneplus3/proprietary/lib64/lib-imsvtutils.so:system/lib64/lib-imsvtutils.so \
+    vendor/oneplus/oneplus3/proprietary/lib64/libadsprpc.so:system/lib64/libadsprpc.so \
+    vendor/oneplus/oneplus3/proprietary/lib64/libandroid_net.so:system/lib64/libandroid_net.so \
     vendor/oneplus/oneplus3/proprietary/lib64/libdiag_system.so:system/lib64/libdiag_system.so \
-    vendor/oneplus/oneplus3/proprietary/lib64/libdpmctmgr.so:system/lib64/libdpmctmgr.so \
-    vendor/oneplus/oneplus3/proprietary/lib64/libdpmfdmgr.so:system/lib64/libdpmfdmgr.so \
-    vendor/oneplus/oneplus3/proprietary/lib64/libdpmframework.so:system/lib64/libdpmframework.so \
-    vendor/oneplus/oneplus3/proprietary/lib64/libdpmnsrm.so:system/lib64/libdpmnsrm.so \
-    vendor/oneplus/oneplus3/proprietary/lib64/libdpmtcm.so:system/lib64/libdpmtcm.so \
     vendor/oneplus/oneplus3/proprietary/lib64/libimscamera_jni.so:system/lib64/libimscamera_jni.so \
     vendor/oneplus/oneplus3/proprietary/lib64/libimsmedia_jni.so:system/lib64/libimsmedia_jni.so \
+    vendor/oneplus/oneplus3/proprietary/lib64/liblocationservice_jni.so:system/lib64/liblocationservice_jni.so \
     vendor/oneplus/oneplus3/proprietary/lib64/libqmi_cci_system.so:system/lib64/libqmi_cci_system.so \
     vendor/oneplus/oneplus3/proprietary/lib64/librcc.so:system/lib64/librcc.so \
     vendor/oneplus/oneplus3/proprietary/lib64/libsdm-disp-apis.so:system/lib64/libsdm-disp-apis.so \
@@ -523,7 +510,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/bin/adsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/adsprpcd \
     vendor/oneplus/oneplus3/proprietary/vendor/bin/btnvtool:$(TARGET_COPY_OUT_VENDOR)/bin/btnvtool \
     vendor/oneplus/oneplus3/proprietary/vendor/bin/cnd:$(TARGET_COPY_OUT_VENDOR)/bin/cnd \
-    vendor/oneplus/oneplus3/proprietary/vendor/bin/dpmQmiMgr:$(TARGET_COPY_OUT_VENDOR)/bin/dpmQmiMgr \
     vendor/oneplus/oneplus3/proprietary/vendor/bin/energy-awareness:$(TARGET_COPY_OUT_VENDOR)/bin/energy-awareness \
     vendor/oneplus/oneplus3/proprietary/vendor/bin/hci_qcomm_init:$(TARGET_COPY_OUT_VENDOR)/bin/hci_qcomm_init \
     vendor/oneplus/oneplus3/proprietary/vendor/bin/hw/vendor.display.color@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.display.color@1.0-service \
@@ -579,7 +565,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/framework/qti-vzw-ims-internal.jar:$(TARGET_COPY_OUT_VENDOR)/framework/qti-vzw-ims-internal.jar \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/com.qualcomm.qti.ant@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.ant@1.0_vendor.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so \
-    vendor/oneplus/oneplus3/proprietary/vendor/lib/com.qualcomm.qti.dpm.api@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.dpm.api@1.0_vendor.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/com.quicinc.cne.api@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.quicinc.cne.api@1.0.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/com.quicinc.cne.constants@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.quicinc.cne.constants@1.0.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/com.quicinc.cne.constants@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.quicinc.cne.constants@2.0.so \
@@ -631,7 +616,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libcneoplookup.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcneoplookup.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libcneqmiutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcneqmiutils.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdiag.so \
-    vendor/oneplus/oneplus3/proprietary/vendor/lib/libdpmqmihal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdpmqmihal.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libdsi_netctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsi_netctrl.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libdsutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsutils.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libfastcvadsp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcvadsp_stub.so \
@@ -703,7 +687,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/vendor.display.postproc@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.postproc@1.0_vendor.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/com.qualcomm.qti.ant@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.ant@1.0_vendor.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so \
-    vendor/oneplus/oneplus3/proprietary/vendor/lib64/com.qualcomm.qti.dpm.api@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.dpm.api@1.0_vendor.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/com.quicinc.cne.api@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.quicinc.cne.api@1.0.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/com.quicinc.cne.constants@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.quicinc.cne.constants@1.0.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/com.quicinc.cne.constants@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.quicinc.cne.constants@2.0.so \
@@ -766,7 +749,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libdataitems.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdataitems.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdiag.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libdisp-aba.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisp-aba.so \
-    vendor/oneplus/oneplus3/proprietary/vendor/lib64/libdpmqmihal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdpmqmihal.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libdrmfs.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrmfs.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libdrmtime.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrmtime.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libdrplugin_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrplugin_client.so \
@@ -879,7 +861,6 @@ PRODUCT_PACKAGES += \
     imssettings \
     CNEService \
     com.qualcomm.location \
-    dpmserviceapp \
     qcrilmsgtunnel \
     TimeService \
     colorservice \
@@ -909,7 +890,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/etc/perf/perf-profile4.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perf-profile4.conf \
     vendor/oneplus/oneplus3/proprietary/vendor/etc/perf/perf-profile5.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perf-profile5.conf \
     vendor/oneplus/oneplus3/proprietary/vendor/etc/perf/perf-profile6.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perf-profile6.conf \
-    vendor/oneplus/oneplus3/proprietary/vendor/etc/perf/perfboostsconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfboostsconfig.xml \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/hw/vendor.qti.hardware.iop@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.iop@1.0-impl.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libperfgluelayer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperfgluelayer.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libqti-iopd-client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-iopd-client.so \
