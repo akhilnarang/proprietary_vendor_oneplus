@@ -473,7 +473,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/framework/uimlpalibrary.jar:system/framework/uimlpalibrary.jar \
     vendor/oneplus/oneplus3/proprietary/lib/com.qualcomm.qti.ant@1.0.so:system/lib/com.qualcomm.qti.ant@1.0.so \
     vendor/oneplus/oneplus3/proprietary/lib/libadsprpc.so:system/lib/libadsprpc.so \
-    vendor/oneplus/oneplus3/proprietary/lib/libandroid_net.so:system/lib/libandroid_net.so \
     vendor/oneplus/oneplus3/proprietary/lib/libdiag_system.so:system/lib/libdiag_system.so \
     vendor/oneplus/oneplus3/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
     vendor/oneplus/oneplus3/proprietary/lib/libqmi_cci_system.so:system/lib/libqmi_cci_system.so \
@@ -491,7 +490,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/lib64/lib-imsvtextutils.so:system/lib64/lib-imsvtextutils.so \
     vendor/oneplus/oneplus3/proprietary/lib64/lib-imsvtutils.so:system/lib64/lib-imsvtutils.so \
     vendor/oneplus/oneplus3/proprietary/lib64/libadsprpc.so:system/lib64/libadsprpc.so \
-    vendor/oneplus/oneplus3/proprietary/lib64/libandroid_net.so:system/lib64/libandroid_net.so \
     vendor/oneplus/oneplus3/proprietary/lib64/libdiag_system.so:system/lib64/libdiag_system.so \
     vendor/oneplus/oneplus3/proprietary/lib64/libimscamera_jni.so:system/lib64/libimscamera_jni.so \
     vendor/oneplus/oneplus3/proprietary/lib64/libimsmedia_jni.so:system/lib64/libimsmedia_jni.so \
@@ -865,7 +863,8 @@ PRODUCT_PACKAGES += \
     TimeService \
     colorservice \
     qcnvitems \
-    qcrilhook
+    qcrilhook \
+    telephony-ext
 endif
 
 -include vendor/extra/devices.mk
