@@ -866,7 +866,8 @@ PRODUCT_PACKAGES += \
     TimeService \
     colorservice \
     qcnvitems \
-    qcrilhook
+    qcrilhook \
+    telephony-ext
 endif
 
 -include vendor/extra/devices.mk
