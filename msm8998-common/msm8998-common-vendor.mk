@@ -1261,3 +1261,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/vendor.qti.hardware.iop@2.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.iop@2.0_vendor.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/vendor.qti.hardware.perf@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.perf@1.0_vendor.so
 endif
+
+# Temporary gnss hax
+PRODUCT_COPY_FILES += vendor/oneplus/msm8998-common/proprietary/lib64/android.hardware.gmss@1.0.so:system/lib64/android.hardware.gmss@1.0.so
+
